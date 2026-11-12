@@ -1,20 +1,38 @@
 [
   {
     "id": 1,
-    "name": "أحمد علي",
-    "job": "Frontend Developer",
-    "skills": ["HTML", "CSS", "JavaScript"]
+    "title": "أصابع رفيعة (Shoestring)",
+    "size": "المقاس: 7×7 مم",
+    "description": "سريعة التحضير ومقرمشة للغاية، الخيار المفضل لسلاسل مطاعم الوجبات السريعة (Burger Chains).",
+    "packaging": "التعبئة: 2.5 كجم × 4",
+    "validity": "الصلاحية: 24 شهراً",
+    "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=500&auto=format&fit=crop"
   },
   {
     "id": 2,
-    "name": "سارة محمد",
-    "job": "UI/UX Designer",
-    "skills": ["Figma", "Adobe XD"]
+    "title": "التقطيع الكلاسيكي (Straight Cut)",
+    "size": "المقاس: 9×9 مم / 10×10 مم",
+    "description": "التوازن المثالي بين القشرة المقرمشة والقلب الطري الغني، مناسبة لجميع الأطباق الرئيسية.",
+    "packaging": "التعبئة: 1 كجم / 2.5 كجم",
+    "validity": "الصلاحية: 24 شهراً",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=500&auto=format&fit=crop"
   },
   {
     "id": 3,
-    "name": "محمود حسن",
-    "job": "Backend Developer",
-    "skills": ["Node.js", "Python", "SQL"]
+    "title": "البطاطس المتعرجة (Crinkle Cut)",
+    "size": "المقاس: 10×10 مم متعرج",
+    "description": "شكل ممتع يجذب العائلات والأطفال، وتحتفظ بالصلصات والبهارات بشكل ممتاز.",
+    "packaging": "التعبئة: 1 كجم / 2.5 كجم",
+    "validity": "الصلاحية: 24 شهراً",
+    "image": "https://images.unsplash.com/photo-1598679253544-2c97992403ea?q=80&w=500&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "بطاطس ويدجز (Wedges)",
+    "size": "تقطيع شرائح مثلثة",
+    "description": "شرائح سميكة بقشرتها، متوفرة سادة أو متبلة بخلطة الأعشاب الخاصة، ممتازة للشواء والقلي.",
+    "packaging": "التعبئة: 2.5 كجم",
+    "validity": "الصلاحية: 24 شهراً",
+    "image": "https://images.unsplash.com/photo-1618449840665-9ed506d73a34?q=80&w=500&auto=format&fit=crop"
   }
 ]
