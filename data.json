@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "أحمد علي",
+    "job": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "name": "سارة محمد",
+    "job": "UI/UX Designer",
+    "skills": ["Figma", "Adobe XD"]
+  },
+  {
+    "id": 3,
+    "name": "محمود حسن",
+    "job": "Backend Developer",
+    "skills": ["Node.js", "Python", "SQL"]
+  }
+]
