@@ -1,609 +1,288 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>كاف للمنتجات الطبيعية</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- مكتبة Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <style>
-    :root {
-      --primary: #3b5229;
-      --primary-dark: #253618;
-      --gold: #c69749;
-      --bg: #f6f1e7;
-      --card-bg: #ffffff;
-      --text: #1f2937;
-      --text-muted: #6b7280;
-      --border: #e6dfd1;
-      --shadow: 0 6px 24px rgba(37, 54, 24, 0.08);
+{
+  "storeInfo": {
+    "name": "كاف للمنتجات الطبيعية",
+    "tagline": "تكفيك وزيادة • عسل نحل، ألبان، عناية طبيعية، مكسرات، بن، توابل وزيوت بكر 100%",
+    "currency": "ج.م",
+    "whatsappNumber": "201000000000"
+  },
+  "categories": [
+    {
+      "id": "honey",
+      "title": "العسل النحل الطبيعي",
+      "icon": "🍯",
+      "note": "جودة عالية النقاء • نجهز خلطات عسل متنوعة بالطلب",
+      "products": [
+        { "name": "برسيم حجازي صحراوي", "unit": "1 ك", "price": 300 },
+        { "name": "ينسون عضوي", "unit": "1 ك", "price": 320 },
+        { "name": "موالح عضوية (بدلاً من 390 ج)", "unit": "1 ك", "price": 350 },
+        { "name": "برسيم حجازي وسدر صحراوي (متبلور)", "unit": "1 ك", "price": 390 },
+        { "name": "أعشاب طبية عضوية", "unit": "1 ك", "price": 440 },
+        { "name": "رطريط جبلي", "unit": "1 ك", "price": 380 },
+        { "name": "شوكيات جبلي", "unit": "1 ك", "price": 520 },
+        { "name": "بردقوش صحراوي", "unit": "1 ك", "price": 540 },
+        { "name": "شمر جبلي", "unit": "1 ك", "price": 700 },
+        { "name": "زعتر جبلي", "unit": "1 ك", "price": 760 },
+        { "name": "سدر وائل جبلي", "unit": "1 ك", "price": 1100 },
+        { "name": "سدر جبلي سيناوي", "unit": "1 ك", "price": 1300 },
+        { "name": "سدر جبلي ملكي ②", "unit": "1 ك", "price": 1400 },
+        { "name": "سدر جبلي ملكي ①", "unit": "1 ك", "price": 1500 },
+        { "name": "طلح جبلي (أكاسيا)", "unit": "¼ ك", "price": 375 },
+        { "name": "سدر يمني حضرمي", "unit": "¼ ك", "price": 1250 },
+        { "name": "سدر يمني عصيمي", "unit": "¼ ك", "price": 1500 },
+        { "name": "زوايد شمع صحراوي", "unit": "1 ك", "price": 500 },
+        { "name": "زوايد شمع صحراوي", "unit": "½ ك", "price": 260 },
+        { "name": "زوايد شمع السدر (بدلاً من 1500 ج)", "unit": "1 ك", "price": 1000 },
+        { "name": "مكسرات مشكل بالعسل (فريش بالطلب)", "unit": "380 جرام", "price": 290 },
+        { "name": "خلطة عسل سدر ملكية 👑", "unit": "½ ك", "price": 1450 },
+        { "name": "خلطات عسل متنوعة", "unit": "بالطلب", "price": null, "priceText": "حسب الطلب" }
+      ]
+    },
+    {
+      "id": "natural_care",
+      "title": "العناية الطبيعية",
+      "icon": "🌿",
+      "note": "منتجات عناية بالشعر والبشرة والجسم طبيعية 100%",
+      "products": [
+        { "name": "عرض مجموعة الحمام المغربي الأصلية 🇲🇦 (طمي، تبريمة، صابون، ليفة، زيت جاف)", "unit": "مجموعة كاملة", "price": 600 },
+        { "name": "حمام كريم زبدة شيا", "unit": "عبوة", "price": 145 },
+        { "name": "حمام كريم لانولين", "unit": "عبوة", "price": 145 },
+        { "name": "حمام كريم أرجان", "unit": "عبوة", "price": 145 },
+        { "name": "بلسم كافيار محفز إنبات", "unit": "عبوة", "price": 180 },
+        { "name": "زيت تساقط أرجان و8 زيوت", "unit": "عبوة", "price": 185 },
+        { "name": "خل يفيد في حالات الصلع", "unit": "عبوة", "price": null, "priceText": "قريباً" },
+        { "name": "جل يفيد حالات الصلع", "unit": "عبوة", "price": 180 },
+        { "name": "زيت هندي للفراغات", "unit": "عبوة", "price": 290 },
+        { "name": "زيت حشيش مغربي أصلي", "unit": "عبوة", "price": 280 },
+        { "name": "كريم روز ماري", "unit": "عبوة", "price": 100 },
+        { "name": "جل مقطر روزماري", "unit": "عبوة", "price": 150 },
+        { "name": "ورق سدر مغربي", "unit": "100 جرام", "price": 190 },
+        { "name": "ورق سدر مصري", "unit": "100 جرام", "price": 100 },
+        { "name": "حناء سوداني", "unit": "¼ ك", "price": 150 },
+        { "name": "حناء أسواني", "unit": "¼ ك", "price": 125 },
+        { "name": "كريم بشرة مرطب ومغذي", "unit": "عبوة", "price": 50 },
+        { "name": "بادي لوشن", "unit": "عبوة", "price": 135 },
+        { "name": "مزيل عرق بالعود", "unit": "عبوة", "price": 95 },
+        { "name": "مزيل عرق (ستيك)", "unit": "عبوة", "price": 90 },
+        { "name": "كريم تفتيح ألفا أربوتين", "unit": "عبوة", "price": 145 },
+        { "name": "كريم تقشير", "unit": "عبوة", "price": 130 },
+        { "name": "نيلة زرقاء مغربي", "unit": "30 جرام", "price": 110 },
+        { "name": "حناء بيضاء مغربي", "unit": "عبوة", "price": null, "priceText": "تواصل للسعر" },
+        { "name": "دلكة السوداني الأصلية", "unit": "عبوة", "price": null, "priceText": "تواصل للسعر" },
+        { "name": "سويت بالأعشاب", "unit": "عبوة", "price": null, "priceText": "تواصل للسعر" },
+        { "name": "جل مسك أبيض", "unit": "عبوة", "price": 90 },
+        { "name": "بادي لوشن (حجم آخر)", "unit": "عبوة", "price": 130 },
+        { "name": "مخمرية جل مسك الرمان", "unit": "عبوة", "price": 90 },
+        { "name": "مخمرية بعطر الورد", "unit": "عبوة", "price": 70 },
+        { "name": "كحل الأثمد الأصلي", "unit": "عبوة", "price": 125 },
+        { "name": "زيت جوز هند عضوي", "unit": "¼ لتر", "price": 220 },
+        { "name": "شامبو علاج للقشرة", "unit": "عبوة", "price": 200 },
+        { "name": "شامبو روز ماري", "unit": "عبوة", "price": 140 },
+        { "name": "شامبو الأرجان", "unit": "عبوة", "price": 150 },
+        { "name": "شامبو الأرجان", "unit": "1000 مللي", "price": 370 },
+        { "name": "شامبو صبار والبابونج", "unit": "عبوة", "price": 130 },
+        { "name": "خلاصة السعد اسبراي", "unit": "عبوة", "price": 110 },
+        { "name": "كريم السعد", "unit": "عبوة", "price": 90 },
+        { "name": "زبدة شيا أصلية", "unit": "100 جرام", "price": 200 },
+        { "name": "ليب بالم زبدة كاكاو خام", "unit": "عبوة", "price": 160 },
+        { "name": "ماء ورد مقطر باكستاني 🌷", "unit": "عبوة", "price": 110 },
+        { "name": "غسول بشرة مقطر الخيار 🥒", "unit": "عبوة", "price": 50 },
+        { "name": "غسول بشرة مقطر الكيوي 🥝", "unit": "عبوة", "price": 70 },
+        { "name": "غسول بشرة مقطر اللبان", "unit": "عبوة", "price": 80 },
+        { "name": "جل الكاموميل (البابونج) لمشاكل الحبوب والبشرة", "unit": "عبوة", "price": 310 },
+        { "name": "جل مقطر الورد", "unit": "عبوة", "price": 140 },
+        { "name": "جل اللبان الذكر", "unit": "عبوة", "price": 150 },
+        { "name": "جل مقطر صبار الألوفيرا", "unit": "عبوة", "price": 150 },
+        { "name": "زبدة ليمون طبيعي", "unit": "100 جرام", "price": 170 },
+        { "name": "شراب سيليكون (عرض)", "unit": "قطعة", "price": 110 },
+        { "name": "جلافز سيليكون (عرض)", "unit": "قطعة", "price": 120 },
+        { "name": "صابون طبيعي بأنواعه (ورد، عرق سوس، عسل، لبان ذكر، غار، حليب، فحم، جلسرين، كركم، شيا، كبريت)", "unit": "قطعة", "price": 50 }
+      ]
+    },
+    {
+      "id": "dairy",
+      "title": "الألبان والأجبان الطبيعية",
+      "icon": "🥛",
+      "note": "طعم الطبيعة، جودة كاف • ألبان وأجبان وحليب خاص",
+      "products": [
+        { "name": "زبادي بلدي", "unit": "140 جرام", "price": 15 },
+        { "name": "لبن جاموسي كامل دسم", "unit": "1 ك", "price": 45 },
+        { "name": "لبن بقري كامل دسم", "unit": "1 ك", "price": 30 },
+        { "name": "قريش خالي الدسم", "unit": "½ ك", "price": 55 },
+        { "name": "قريش نصف دسم", "unit": "½ ك", "price": 70 },
+        { "name": "قريش كامل الدسم", "unit": "½ ك", "price": 85 },
+        { "name": "قشطة حلوة كريمة", "unit": "½ ك", "price": 180 },
+        { "name": "قشطة رول", "unit": "¼ ك", "price": 95 },
+        { "name": "زبدة جاموسي بلدي", "unit": "1 ك", "price": 390 },
+        { "name": "زبدة بقري بلدي", "unit": "1 ك", "price": 330 },
+        { "name": "صافي سمن جاموسي", "unit": "300 جرام", "price": 185 },
+        { "name": "صافي سمن جاموسي", "unit": "150 جرام", "price": 95 },
+        { "name": "صافي سمن بقري", "unit": "300 جرام", "price": 150 },
+        { "name": "صافي سمن بقري", "unit": "150 جرام", "price": 85 },
+        { "name": "مورتة بلدي", "unit": "125 جرام", "price": 40 },
+        { "name": "جبن ملح خفيف (ثلاجة)", "unit": "½ ك", "price": 125 },
+        { "name": "جبن فيتا مطبوخ طبيعي", "unit": "½ ك", "price": 120 },
+        { "name": "جبن كيري مطبوخ طبيعي", "unit": "½ ك", "price": 120 },
+        { "name": "حليب إبل صحراوي خام", "unit": "½ لتر", "price": 100 },
+        { "name": "حليب ماعز خام", "unit": "½ لتر", "price": 80 },
+        { "name": "رايب ماعز خام", "unit": "½ لتر", "price": 95 },
+        { "name": "حليب أغنام", "unit": "½ لتر", "price": 110 },
+        { "name": "حليب الكفير", "unit": "عبوة", "price": null, "priceText": "قريباً" }
+      ]
+    },
+    {
+      "id": "coffee",
+      "title": "البن وتوليفات مميزة",
+      "icon": "☕",
+      "note": "أفخر أنواع البن والقهوة والشاي",
+      "products": [
+        { "name": "بن سادة فاتح فاخر", "unit": "¼ ك", "price": 160 },
+        { "name": "بن سادة وسط فاخر", "unit": "¼ ك", "price": 160 },
+        { "name": "بن سادة غامق فاخر", "unit": "¼ ك", "price": 170 },
+        { "name": "بن محوج فاتح فاخر", "unit": "¼ ك", "price": 180 },
+        { "name": "بن محوج وسط فاخر", "unit": "¼ ك", "price": 180 },
+        { "name": "بن محوج غامق فاخر", "unit": "¼ ك", "price": 190 },
+        { "name": "بن سادة اسبيشيال", "unit": "¼ ك", "price": 200 },
+        { "name": "بن محوج اسبيشيال", "unit": "¼ ك", "price": 220 },
+        { "name": "اسبريسو", "unit": "¼ ك", "price": 235 },
+        { "name": "قهوة خضرة", "unit": "¼ ك", "price": 180 },
+        { "name": "قهوة بندق قطع", "unit": "¼ ك", "price": 175 },
+        { "name": "نسكافيه كلاسيك بلاك", "unit": "50 جرام", "price": 70 },
+        { "name": "نسكافيه جولد", "unit": "50 جرام", "price": 110 },
+        { "name": "قهوة عربي سادة", "unit": "¼ ك", "price": 210 },
+        { "name": "قهوة عربي محوج", "unit": "¼ ك", "price": 250 },
+        { "name": "شاي أخضر صيني", "unit": "100 جرام", "price": 50 },
+        { "name": "شاي ليبي", "unit": "100 جرام", "price": null, "priceText": "تواصل للسعر" }
+      ]
+    },
+    {
+      "id": "nuts",
+      "title": "المكسرات الصحية المميزة",
+      "icon": "🥜",
+      "note": "سعر ¼ ك صافي • المشكل يتم تسعيره حسب الطلب بداية من ⅛ ك",
+      "products": [
+        { "name": "الكاجو", "unit": "¼ ك", "price": 250 },
+        { "name": "الفستق", "unit": "¼ ك", "price": 275 },
+        { "name": "اللوز", "unit": "¼ ك", "price": 210 },
+        { "name": "عين الجمل", "unit": "¼ ك", "price": 205 },
+        { "name": "مكاديميا مقشرة حجم كبير نيء", "unit": "¼ ك", "price": 410 },
+        { "name": "جوز بيكان محمص ⏳", "unit": "¼ ك", "price": null, "priceText": "قريباً" },
+        { "name": "جوز برازيلي كبير نيء ⏳", "unit": "¼ ك", "price": null, "priceText": "قريباً" }
+      ]
+    },
+    {
+      "id": "luncheon",
+      "title": "اللانشون الطبيعي",
+      "icon": "🥩",
+      "note": "لحم صافي مدخن مغلف فاكيوم",
+      "products": [
+        { "name": "لانشون لحم رومي مدخن", "unit": "300 جرام", "price": 228 },
+        { "name": "لانشون لحم فراخ مدخن", "unit": "300 جرام", "price": 189 },
+        { "name": "لانشون لحم بقري مدخن", "unit": "300 جرام", "price": 252 },
+        { "name": "لانشون لحم جملي مدخن", "unit": "300 جرام", "price": 237 }
+      ]
+    },
+    {
+      "id": "variety",
+      "title": "منتجات متنوعة مميزة",
+      "icon": "✨",
+      "note": "أعشاب نادرة، بذور، طحينة، خل عضوي، وفواكه مجففة",
+      "products": [
+        { "name": "طحينة خام سمسم", "unit": "850 جرام", "price": 210 },
+        { "name": "طحينة خام سمسم", "unit": "480 جرام", "price": 120 },
+        { "name": "زبدة فول سوداني خام", "unit": "375 جرام", "price": 115 },
+        { "name": "خل تفاح عضوي", "unit": "عبوة", "price": 350 },
+        { "name": "خل تفاح", "unit": "¼ لتر", "price": 105 },
+        { "name": "مستكة يوناني خيوس", "unit": "10 جرام", "price": 200 },
+        { "name": "زعفران أفغاني", "unit": "1 جرام", "price": 350 },
+        { "name": "جينسينج أحمر كوري طري عمر", "unit": "1 جرام", "price": 9 },
+        { "name": "جينسينج أحمر كوري مطحون خام", "unit": "1 جرام", "price": 22 },
+        { "name": "أشوجندا", "unit": "1 جرام", "price": 3.5 },
+        { "name": "حسك بري مطحون", "unit": "1 جرام", "price": 1.5 },
+        { "name": "قسط هندي", "unit": "وزن", "price": null, "priceText": "تواصل للسعر" },
+        { "name": "طحالب ديتومات خارقة", "unit": "1 جرام", "price": 12 },
+        { "name": "عشبة الماكا مطحون", "unit": "1 جرام", "price": 9 },
+        { "name": "بروبليس روسي", "unit": "1 جرام", "price": 35 },
+        { "name": "بروبليس بلدي", "unit": "1 جرام", "price": 25 },
+        { "name": "حبوب لقاح برسيم", "unit": "1 جرام", "price": 3.5 },
+        { "name": "طلع نخل بيور", "unit": "1 جرام", "price": 4 },
+        { "name": "بذور يقطين", "unit": "¼ ك", "price": 110 },
+        { "name": "بذور الشيا", "unit": "¼ ك", "price": 110 },
+        { "name": "مشمش مجفف تركي", "unit": "¼ ك", "price": 230 },
+        { "name": "تين سوري مجفف", "unit": "¼ ك", "price": 225 },
+        { "name": "تين بقلامي سوري", "unit": "¼ ك", "price": 245 },
+        { "name": "قراصيا أرجنتيني", "unit": "¼ ك", "price": 125 },
+        { "name": "توت بري كرانبيري مجفف", "unit": "¼ ك", "price": 235 }
+      ]
+    },
+    {
+      "id": "spices",
+      "title": "توابل خام مميزة",
+      "icon": "🧂",
+      "note": "جميع الأسعار لوزن 100 جرام",
+      "products": [
+        { "name": "زنجبيل مطحون", "unit": "100 جرام", "price": 60 },
+        { "name": "كركم مطحون", "unit": "100 جرام", "price": 60 },
+        { "name": "فلفل أسود حصى", "unit": "100 جرام", "price": 60 },
+        { "name": "كركديه لوزة غامق أسواني", "unit": "100 جرام", "price": 55 },
+        { "name": "قرفة مطحونة", "unit": "100 جرام", "price": 50 },
+        { "name": "كمون بلدي حصى", "unit": "100 جرام", "price": 50 },
+        { "name": "كاري مميز مطحون", "unit": "100 جرام", "price": 45 },
+        { "name": "شطة بلدي مطحونة", "unit": "100 جرام", "price": 45 },
+        { "name": "بابريكا مطحونة", "unit": "100 جرام", "price": 45 },
+        { "name": "كزبرة بلدي حصى", "unit": "100 جرام", "price": 35 },
+        { "name": "جوزة الطيب", "unit": "100 جرام", "price": null, "priceText": "تواصل للسعر" }
+      ]
+    },
+    {
+      "id": "oils",
+      "title": "زيوت طبيعية خام",
+      "icon": "🫒",
+      "note": "زيوت بكر ونقية مضمونة 100%",
+      "products": [
+        { "name": "زيت زيتون سيناوي بكر ممتاز ع البارد", "unit": "1 لتر", "price": 600 },
+        { "name": "زيت زيتون سيناوي", "unit": "½ لتر", "price": 310 },
+        { "name": "زيت زيتون سيناوي", "unit": "¼ لتر", "price": 160 },
+        { "name": "زيت زيتون مطروح بكر ممتاز ع البارد", "unit": "1 لتر", "price": 600 },
+        { "name": "زيت جوز هند عضوي", "unit": "¼ لتر", "price": 220 },
+        { "name": "زيت جوز هند عضوي", "unit": "⅛ لتر", "price": 120 },
+        { "name": "زيت سمسم", "unit": "¼ لتر", "price": 150 },
+        { "name": "زيت بذور اليقطين", "unit": "¼ لتر", "price": 625 },
+        { "name": "زيت حبة بركة حبشي", "unit": "¼ لتر", "price": 850 },
+        { "name": "زيت حبة بركة بلدي", "unit": "¼ لتر", "price": 375 },
+        { "name": "زيت بذور الكتان (زيت حار)", "unit": "¼ لتر", "price": 130 },
+        { "name": "زيت خروع بلدي", "unit": "¼ لتر", "price": 430 }
+      ]
+    },
+    {
+      "id": "icecream",
+      "title": "آيس كريم طبيعي",
+      "icon": "🍨",
+      "note": "الأسعار لوزن ⅛ كيلو • متاح أوزان: ½ ك، 1 ك، 2 ك",
+      "products": [
+        { "name": "حليب 🥛", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "مانجو 🥭", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "فراولة 🍓", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "موز 🍌", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "ليمون 🍋", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "ليمون نعناع 🍃🍋", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "كركديه 🌺", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "تمر هندي", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "عناب", "unit": "⅛ كيلو", "price": 40 },
+        { "name": "فانيليا 🤍", "unit": "⅛ كيلو", "price": 45 },
+        { "name": "شوكولاتة سادة 🍫", "unit": "⅛ كيلو", "price": 50 },
+        { "name": "تمر القصيم السعودي", "unit": "⅛ كيلو", "price": 50 },
+        { "name": "شوكولاتة براونيز 🍫", "unit": "⅛ كيلو", "price": 50 },
+        { "name": "زبادي توت بلوبيري", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "زبادي توت راسبيري", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "لوتس", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "تشيز كيك", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "كراميل لوز", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "رفايلو بشرايح جوز هند", "unit": "⅛ كيلو", "price": 55 },
+        { "name": "مستكة يوناني بالفستق", "unit": "⅛ كيلو", "price": 60 },
+        { "name": "اللبان الطبيعي", "unit": "⅛ كيلو", "price": 60 },
+        { "name": "قشطة فستق", "unit": "⅛ كيلو", "price": 60 },
+        { "name": "فستــــــق", "unit": "⅛ كيلو", "price": 60 }
+      ]
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding-bottom: 100px;
-    }
-
-    /* الهيدر */
-    header {
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-      color: #fff;
-      padding: 42px 20px 64px;
-      text-align: center;
-      border-bottom: 4px solid var(--gold);
-    }
-
-    .brand-badge {
-      display: inline-block;
-      background: rgba(198, 151, 73, 0.2);
-      border: 1px solid var(--gold);
-      color: #fde68a;
-      padding: 4px 16px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 0.98rem;
-      opacity: 0.92;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    /* صندوق البحث وسويبر الأقسام */
-    .controls-wrapper {
-      max-width: 1180px;
-      margin: -34px auto 30px;
-      padding: 0 16px;
-      position: relative;
-      z-index: 10;
-    }
-
-    .controls-box {
-      background: var(--card-bg);
-      padding: 18px;
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 12px 18px;
-      border: 1.5px solid var(--border);
-      border-radius: 12px;
-      font-family: inherit;
-      font-size: 1rem;
-      outline: none;
-      margin-bottom: 14px;
-      background: #fdfbf7;
-      transition: border-color 0.2s;
-    }
-
-    .search-input:focus {
-      border-color: var(--primary);
-      background: #fff;
-    }
-
-    /* سويبر الأقسام العلوي */
-    .categories-swiper {
-      padding: 4px 2px 8px;
-    }
-
-    .categories-swiper .swiper-slide {
-      width: auto;
-    }
-
-    .cat-pill {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      border: 1.5px solid var(--border);
-      background: #fdfbf7;
-      color: var(--text);
-      padding: 9px 18px;
-      border-radius: 999px;
-      font-family: inherit;
-      font-size: 0.92rem;
-      font-weight: 700;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.25s;
-    }
-
-    .cat-pill:hover {
-      border-color: var(--gold);
-      background: #fef9ee;
-    }
-
-    .cat-pill.active {
-      background: var(--primary);
-      color: #fff;
-      border-color: var(--primary);
-      box-shadow: 0 4px 12px rgba(59, 82, 41, 0.25);
-    }
-
-    .cat-count {
-      font-size: 0.75rem;
-      background: rgba(0, 0, 0, 0.08);
-      padding: 1px 7px;
-      border-radius: 999px;
-    }
-
-    .cat-pill.active .cat-count {
-      background: rgba(255, 255, 255, 0.22);
-    }
-
-    /* المحتوى */
-    main {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    .category-section {
-      background: rgba(255, 255, 255, 0.65);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 22px 18px;
-      margin-bottom: 30px;
-    }
-
-    .category-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 18px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid var(--border);
-    }
-
-    .category-title-group {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .category-title {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-    }
-
-    .category-note {
-      background: #fef3c7;
-      color: #92400e;
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 700;
-    }
-
-    .view-toggle-btn {
-      background: #fff;
-      border: 1px solid var(--gold);
-      color: var(--primary-dark);
-      padding: 6px 14px;
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .view-toggle-btn:hover {
-      background: var(--gold);
-      color: #fff;
-    }
-
-    /* سلايدر المنتجات */
-    .products-swiper {
-      padding: 6px 4px 38px !important;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      background: #fff;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
-      color: var(--primary-dark) !important;
-      top: 44%;
-    }
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      font-size: 15px !important;
-      font-weight: 800;
-    }
-
-    .swiper-pagination-bullet-active {
-      background: var(--primary) !important;
-    }
-
-    /* الشبكة عند الضغط على عرض الكل */
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 14px;
-    }
-
-    /* بطاقة المنتج */
-    .product-card {
-      background: var(--card-bg);
-      border-radius: 14px;
-      padding: 16px;
-      height: 100%;
-      min-height: 145px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-      border: 1px solid #ede7db;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 10px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-      border-color: var(--gold);
-    }
-
-    .product-name {
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    .product-unit {
-      display: inline-block;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      background: #f5f2eb;
-      padding: 2px 10px;
-      border-radius: 6px;
-      margin-top: 6px;
-      font-weight: 600;
-    }
-
-    .product-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 10px;
-      border-top: 1px dashed var(--border);
-    }
-
-    .product-price {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .product-price.no-price {
-      font-size: 0.88rem;
-      color: #b45309;
-    }
-
-    .add-btn {
-      background: #eef3ea;
-      color: var(--primary-dark);
-      border: none;
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-family: inherit;
-      font-weight: 700;
-      font-size: 0.84rem;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .add-btn:hover {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    /* شريط السلة */
-    .cart-bar {
-      position: fixed;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: calc(100% - 32px);
-      max-width: 620px;
-      background: var(--primary-dark);
-      color: #fff;
-      padding: 14px 18px;
-      border-radius: 16px;
-      border: 1.5px solid var(--gold);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      z-index: 100;
-    }
-
-    .cart-bar.visible { display: flex; }
-    .cart-info { font-size: 0.92rem; font-weight: 700; }
-    .cart-actions { display: flex; gap: 8px; }
-
-    .whatsapp-btn {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 9px 16px;
-      border-radius: 10px;
-      font-family: inherit;
-      font-weight: 700;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .clear-btn {
-      background: rgba(255, 255, 255, 0.16);
-      color: #fff;
-      border: none;
-      padding: 9px 12px;
-      border-radius: 10px;
-      font-family: inherit;
-      cursor: pointer;
-      font-size: 0.85rem;
-    }
-
-    .status-msg, .error-box {
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 14px;
-      background: #fff;
-      margin: 20px 0;
-    }
-
-    .error-box {
-      background: #fef2f2;
-      color: #991b1b;
-      border: 1px solid #fecaca;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.7rem; }
-      .category-title { font-size: 1.2rem; }
-      .cart-bar { flex-direction: column; text-align: center; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="brand-badge">تكفيك وزيادة ✨</div>
-    <h1 id="storeName">جاري التحميل...</h1>
-    <p id="storeTagline"></p>
-  </header>
-
-  <div class="controls-wrapper">
-    <div class="controls-box">
-      <input
-        type="text"
-        id="searchInput"
-        class="search-input"
-        placeholder="🔍 ابحث عن أي منتج (عسل سدر، زيت زيتون، زبادي بلدي، كاجو، بن...)"
-      />
-
-      <!-- سويبر الأقسام المتحرك -->
-      <div class="swiper categories-swiper">
-        <div class="swiper-wrapper" id="filterTabs">
-          <div class="swiper-slide">
-            <button class="cat-pill active" data-category="all">
-              <span>🛍️ كل الأقسام</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <main id="menuContainer">
-    <div class="status-msg">جاري تحميل المنتجات...</div>
-  </main>
-
-  <div class="cart-bar" id="cartBar">
-    <div class="cart-info" id="cartInfo">0 منتجات</div>
-    <div class="cart-actions">
-      <button class="clear-btn" onclick="clearCart()">إفراغ</button>
-      <button class="whatsapp-btn" onclick="sendOrderWhatsApp()">اطلب عبر واتساب 💬</button>
-    </div>
-  </div>
-
-  <!-- مكتبة Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    // رابط الـ API من GitHub (إذا أزلت المسافة من اسم الملف اجعله kaaf-data.json)
-    const API_URL = 'https://raw.githubusercontent.com/hamzawy-talha/data-api/main/kaaf-data.%20json';
-
-    let storeData = null;
-    let activeCategory = 'all';
-    let cart = [];
-    let categorySwiper = null;
-    let productSwipers = [];
-    let expandedCategories = {}; // لتتبع الأقسام التي تم فتحها كشبكة كاملة
-
-    async function loadMenuData() {
-      try {
-        const response = await fetch(`${API_URL}?v=${new Date().getTime()}`);
-        if (!response.ok) throw new Error('فشل التحميل');
-        storeData = await response.json();
-        initStore();
-      } catch (error) {
-        document.getElementById('menuContainer').innerHTML = `
-          <div class="error-box">
-            <strong>تعذر قراءة البيانات من GitHub!</strong><br>
-            تأكد من لصق كود JSON بشكل صحيح داخل ملف <code>kaaf-data. json</code> في مستودعك.
-          </div>
-        `;
-        console.error(error);
-      }
-    }
-
-    function initStore() {
-      document.title = storeData.storeInfo.name;
-      document.getElementById('storeName').textContent = storeData.storeInfo.name;
-      document.getElementById('storeTagline').textContent = storeData.storeInfo.tagline;
-
-      const tabsWrapper = document.getElementById('filterTabs');
-
-      storeData.categories.forEach(cat => {
-        const slide = document.createElement('div');
-        slide.className = 'swiper-slide';
-        slide.innerHTML = `
-          <button class="cat-pill" data-category="${cat.id}">
-            <span>${cat.icon} ${cat.title}</span>
-            <span class="cat-count">${cat.products.length}</span>
-          </button>
-        `;
-        tabsWrapper.appendChild(slide);
-      });
-
-      // تفعيل السويبر العلوي للأقسام
-      categorySwiper = new Swiper('.categories-swiper', {
-        slidesPerView: 'auto',
-        spaceBetween: 10,
-        freeMode: true,
-        grabCursor: true
-      });
-
-      // أحداث الضغط على أزرار الأقسام
-      document.querySelectorAll('.cat-pill').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeCategory = btn.dataset.category;
-          renderCategories();
-        });
-      });
-
-      document.getElementById('searchInput').addEventListener('input', renderCategories);
-      renderCategories();
-    }
-
-    function buildProductCardHTML(product, currency) {
-      const hasPrice = product.price !== null && product.price !== undefined;
-      const priceDisplay = hasPrice
-        ? `${product.price} ${currency}`
-        : (product.priceText || 'تواصل للسعر');
-
-      const safeName = product.name.replace(/'/g, "\\'");
-      const safeUnit = (product.unit || '').replace(/'/g, "\\'");
-
-      return `
-        <div class="product-card">
-          <div>
-            <div class="product-name">${product.name}</div>
-            ${product.unit ? `<span class="product-unit">${product.unit}</span>` : ''}
-          </div>
-          <div class="product-footer">
-            <span class="product-price ${hasPrice ? '' : 'no-price'}">${priceDisplay}</span>
-            <button class="add-btn" onclick="addToCart('${safeName}', '${safeUnit}', ${hasPrice ? product.price : 0})">
-              + أضف
-            </button>
-          </div>
-        </div>
-      `;
-    }
-
-    function toggleCategoryView(catId) {
-      expandedCategories[catId] = !expandedCategories[catId];
-      renderCategories();
-    }
-
-    function renderCategories() {
-      // تدمير السلايدرز القديمة قبل إعادة البناء
-      productSwipers.forEach(s => s.destroy(true, true));
-      productSwipers = [];
-
-      const container = document.getElementById('menuContainer');
-      const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
-      const currency = storeData.storeInfo.currency || 'ج.م';
-
-      container.innerHTML = '';
-      let hasResults = false;
-
-      storeData.categories.forEach(cat => {
-        if (activeCategory !== 'all' && activeCategory !== cat.id) return;
-
-        const filteredProducts = cat.products.filter(p =>
-          p.name.toLowerCase().includes(searchTerm) ||
-          (p.unit && p.unit.toLowerCase().includes(searchTerm))
-        );
-
-        if (filteredProducts.length === 0) return;
-        hasResults = true;
-
-        // إذا كان المستخدم يبحث أو ضغط "عرض الكل" نعرض شبكة، وإلا نعرض سلايدر متحرك
-        const isGridMode = searchTerm.length > 0 || expandedCategories[cat.id];
-
-        const section = document.createElement('section');
-        section.className = 'category-section';
-
-        section.innerHTML = `
-          <div class="category-header">
-            <div class="category-title-group">
-              <h2 class="category-title">${cat.icon} ${cat.title}</h2>
-              ${cat.note ? `<span class="category-note">${cat.note}</span>` : ''}
-            </div>
-            ${searchTerm.length === 0 ? `
-              <button class="view-toggle-btn" onclick="toggleCategoryView('${cat.id}')">
-                ${isGridMode ? 'عرض كسلايدر متحرك ◀' : `عرض الكل (${filteredProducts.length})`}
-              </button>
-            ` : ''}
-          </div>
-          ${isGridMode ? `
-            <div class="products-grid">
-              ${filteredProducts.map(p => buildProductCardHTML(p, currency)).join('')}
-            </div>
-          ` : `
-            <div class="swiper products-swiper" id="swiper-${cat.id}">
-              <div class="swiper-wrapper">
-                ${filteredProducts.map(p => `
-                  <div class="swiper-slide">${buildProductCardHTML(p, currency)}</div>
-                `).join('')}
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          `}
-        `;
-
-        container.appendChild(section);
-
-        if (!is
+  ]
+}
