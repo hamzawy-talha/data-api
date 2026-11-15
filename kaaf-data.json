@@ -1,7 +1,8 @@
 {
-  "storeInfo": {
+"storeInfo": {
     "name": "كاف للمنتجات الطبيعية",
     "tagline": "تكفيك وزيادة • عسل نحل، ألبان، عناية طبيعية، مكسرات، بن، توابل وزيوت بكر 100%",
+    "logo": "https://raw.githubusercontent.com/hamzawy-talha/data-api/main/images/logo-kaaf.png",
     "currency": "ج.م",
     "whatsappNumber": "201000000000"
   },
