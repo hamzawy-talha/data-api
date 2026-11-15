@@ -1,83 +1,609 @@
-{
-  "storeInfo": {
-    "name": "خيرات الطبيعة",
-    "tagline": "توابل خام فاخرة • زيوت طبيعية معصورة على البارد • آيس كريم طبيعي 100%",
-    "currency": "ج.م",
-    "whatsappNumber": "201010570929"
-  },
-  "categories": [
-    {
-      "id": "spices",
-      "title": "توابل خام مميزة",
-      "icon": "🧂",
-      "note": "جميع الأسعار لوزن 100 جرام",
-      "badgeColor": "#b45309",
-      "products": [
-        { "name": "زنجبيل مطحون", "unit": "100 جرام", "price": 60 },
-        { "name": "كركم مطحون", "unit": "100 جرام", "price": 60 },
-        { "name": "فلفل أسود حصى", "unit": "100 جرام", "price": 60 },
-        { "name": "كركديه لوزة غامق أسواني", "unit": "100 جرام", "price": 55 },
-        { "name": "قرفة مطحونة", "unit": "100 جرام", "price": 50 },
-        { "name": "كمون بلدي حصى", "unit": "100 جرام", "price": 50 },
-        { "name": "كاري مميز مطحون", "unit": "100 جرام", "price": 45 },
-        { "name": "شطة بلدي مطحونة", "unit": "100 جرام", "price": 45 },
-        { "name": "بابريكا مطحونة", "unit": "100 جرام", "price": 45 },
-        { "name": "كزبرة بلدي حصى", "unit": "100 جرام", "price": 35 },
-        { "name": "جوزة الطيب", "unit": "100 جرام", "price": null, "priceText": "تواصل للسعر" }
-      ]
-    },
-    {
-      "id": "oils",
-      "title": "زيوت طبيعية خام",
-      "icon": "🫒",
-      "note": "زيوت بكر ونقية مضمونة 100%",
-      "badgeColor": "#3f6212",
-      "products": [
-        { "name": "زيت زيتون سيناوي بكر ممتاز ع البارد", "unit": "1 لتر", "price": 600 },
-        { "name": "زيت زيتون سيناوي", "unit": "½ لتر", "price": 310 },
-        { "name": "زيت زيتون سيناوي", "unit": "¼ لتر", "price": 160 },
-        { "name": "زيت زيتون مطروح بكر ممتاز ع البارد", "unit": "1 لتر", "price": 600 },
-        { "name": "زيت جوز هند عضوي", "unit": "¼ لتر", "price": 220 },
-        { "name": "زيت جوز هند عضوي", "unit": "⅛ لتر", "price": 120 },
-        { "name": "زيت سمسم", "unit": "¼ لتر", "price": 150 },
-        { "name": "زيت بذور اليقطين", "unit": "¼ لتر", "price": 625 },
-        { "name": "زيت حبة بركة حبشي", "unit": "¼ لتر", "price": 850 },
-        { "name": "زيت حبة بركة بلدي", "unit": "¼ لتر", "price": 375 },
-        { "name": "زيت بذور الكتان (زيت حار)", "unit": "¼ لتر", "price": 130 },
-        { "name": "زيت خروع بلدي", "unit": "¼ لتر", "price": 430 }
-      ]
-    },
-    {
-      "id": "icecream",
-      "title": "آيس كريم طبيعي",
-      "icon": "🍨",
-      "note": "الأسعار لوزن ⅛ كيلو • متاح أوزان: ½ ك، 1 ك، 2 ك",
-      "badgeColor": "#be185d",
-      "products": [
-        { "name": "حليب 🥛", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "مانجو 🥭", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "فراولة 🍓", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "موز 🍌", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "ليمون 🍋", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "ليمون نعناع 🍃🍋", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "كركديه 🌺", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "تمر هندي", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "عناب", "unit": "⅛ كيلو", "price": 40 },
-        { "name": "فانيليا 🤍", "unit": "⅛ كيلو", "price": 45 },
-        { "name": "شوكولاتة سادة 🍫", "unit": "⅛ كيلو", "price": 50 },
-        { "name": "تمر القصيم السعودي", "unit": "⅛ كيلو", "price": 50 },
-        { "name": "شوكولاتة براونيز 🍫", "unit": "⅛ كيلو", "price": 50 },
-        { "name": "زبادي توت بلوبيري", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "زبادي توت راسبيري", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "لوتس", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "تشيز كيك", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "كراميل لوز", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "رفايلو بشرايح جوز هند", "unit": "⅛ كيلو", "price": 55 },
-        { "name": "مستكة يوناني بالفستق", "unit": "⅛ كيلو", "price": 60 },
-        { "name": "اللبان الطبيعي", "unit": "⅛ كيلو", "price": 60 },
-        { "name": "قشطة فستق", "unit": "⅛ كيلو", "price": 60 },
-        { "name": "فستــــــق", "unit": "⅛ كيلو", "price": 60 }
-      ]
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كاف للمنتجات الطبيعية</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- مكتبة Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    :root {
+      --primary: #3b5229;
+      --primary-dark: #253618;
+      --gold: #c69749;
+      --bg: #f6f1e7;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --border: #e6dfd1;
+      --shadow: 0 6px 24px rgba(37, 54, 24, 0.08);
     }
-  ]
-}
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 100px;
+    }
+
+    /* الهيدر */
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+      padding: 42px 20px 64px;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .brand-badge {
+      display: inline-block;
+      background: rgba(198, 151, 73, 0.2);
+      border: 1px solid var(--gold);
+      color: #fde68a;
+      padding: 4px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 0.98rem;
+      opacity: 0.92;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* صندوق البحث وسويبر الأقسام */
+    .controls-wrapper {
+      max-width: 1180px;
+      margin: -34px auto 30px;
+      padding: 0 16px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .controls-box {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+      margin-bottom: 14px;
+      background: #fdfbf7;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      background: #fff;
+    }
+
+    /* سويبر الأقسام العلوي */
+    .categories-swiper {
+      padding: 4px 2px 8px;
+    }
+
+    .categories-swiper .swiper-slide {
+      width: auto;
+    }
+
+    .cat-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid var(--border);
+      background: #fdfbf7;
+      color: var(--text);
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s;
+    }
+
+    .cat-pill:hover {
+      border-color: var(--gold);
+      background: #fef9ee;
+    }
+
+    .cat-pill.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(59, 82, 41, 0.25);
+    }
+
+    .cat-count {
+      font-size: 0.75rem;
+      background: rgba(0, 0, 0, 0.08);
+      padding: 1px 7px;
+      border-radius: 999px;
+    }
+
+    .cat-pill.active .cat-count {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    /* المحتوى */
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .category-section {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px 18px;
+      margin-bottom: 30px;
+    }
+
+    .category-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .category-title-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .category-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .category-note {
+      background: #fef3c7;
+      color: #92400e;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .view-toggle-btn {
+      background: #fff;
+      border: 1px solid var(--gold);
+      color: var(--primary-dark);
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .view-toggle-btn:hover {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    /* سلايدر المنتجات */
+    .products-swiper {
+      padding: 6px 4px 38px !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
+      color: var(--primary-dark) !important;
+      top: 44%;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 15px !important;
+      font-weight: 800;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--primary) !important;
+    }
+
+    /* الشبكة عند الضغط على عرض الكل */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    /* بطاقة المنتج */
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 16px;
+      height: 100%;
+      min-height: 145px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      border: 1px solid #ede7db;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+      border-color: var(--gold);
+    }
+
+    .product-name {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .product-unit {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: #f5f2eb;
+      padding: 2px 10px;
+      border-radius: 6px;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .product-price {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .product-price.no-price {
+      font-size: 0.88rem;
+      color: #b45309;
+    }
+
+    .add-btn {
+      background: #eef3ea;
+      color: var(--primary-dark);
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .add-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* شريط السلة */
+    .cart-bar {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 32px);
+      max-width: 620px;
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1.5px solid var(--gold);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .cart-bar.visible { display: flex; }
+    .cart-info { font-size: 0.92rem; font-weight: 700; }
+    .cart-actions { display: flex; gap: 8px; }
+
+    .whatsapp-btn {
+      background: #25d366;
+      color: #fff;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .clear-btn {
+      background: rgba(255, 255, 255, 0.16);
+      color: #fff;
+      border: none;
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-family: inherit;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    .status-msg, .error-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 14px;
+      background: #fff;
+      margin: 20px 0;
+    }
+
+    .error-box {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.7rem; }
+      .category-title { font-size: 1.2rem; }
+      .cart-bar { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-badge">تكفيك وزيادة ✨</div>
+    <h1 id="storeName">جاري التحميل...</h1>
+    <p id="storeTagline"></p>
+  </header>
+
+  <div class="controls-wrapper">
+    <div class="controls-box">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="🔍 ابحث عن أي منتج (عسل سدر، زيت زيتون، زبادي بلدي، كاجو، بن...)"
+      />
+
+      <!-- سويبر الأقسام المتحرك -->
+      <div class="swiper categories-swiper">
+        <div class="swiper-wrapper" id="filterTabs">
+          <div class="swiper-slide">
+            <button class="cat-pill active" data-category="all">
+              <span>🛍️ كل الأقسام</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="menuContainer">
+    <div class="status-msg">جاري تحميل المنتجات...</div>
+  </main>
+
+  <div class="cart-bar" id="cartBar">
+    <div class="cart-info" id="cartInfo">0 منتجات</div>
+    <div class="cart-actions">
+      <button class="clear-btn" onclick="clearCart()">إفراغ</button>
+      <button class="whatsapp-btn" onclick="sendOrderWhatsApp()">اطلب عبر واتساب 💬</button>
+    </div>
+  </div>
+
+  <!-- مكتبة Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // رابط الـ API من GitHub (إذا أزلت المسافة من اسم الملف اجعله kaaf-data.json)
+    const API_URL = 'https://raw.githubusercontent.com/hamzawy-talha/data-api/main/kaaf-data.%20json';
+
+    let storeData = null;
+    let activeCategory = 'all';
+    let cart = [];
+    let categorySwiper = null;
+    let productSwipers = [];
+    let expandedCategories = {}; // لتتبع الأقسام التي تم فتحها كشبكة كاملة
+
+    async function loadMenuData() {
+      try {
+        const response = await fetch(`${API_URL}?v=${new Date().getTime()}`);
+        if (!response.ok) throw new Error('فشل التحميل');
+        storeData = await response.json();
+        initStore();
+      } catch (error) {
+        document.getElementById('menuContainer').innerHTML = `
+          <div class="error-box">
+            <strong>تعذر قراءة البيانات من GitHub!</strong><br>
+            تأكد من لصق كود JSON بشكل صحيح داخل ملف <code>kaaf-data. json</code> في مستودعك.
+          </div>
+        `;
+        console.error(error);
+      }
+    }
+
+    function initStore() {
+      document.title = storeData.storeInfo.name;
+      document.getElementById('storeName').textContent = storeData.storeInfo.name;
+      document.getElementById('storeTagline').textContent = storeData.storeInfo.tagline;
+
+      const tabsWrapper = document.getElementById('filterTabs');
+
+      storeData.categories.forEach(cat => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML = `
+          <button class="cat-pill" data-category="${cat.id}">
+            <span>${cat.icon} ${cat.title}</span>
+            <span class="cat-count">${cat.products.length}</span>
+          </button>
+        `;
+        tabsWrapper.appendChild(slide);
+      });
+
+      // تفعيل السويبر العلوي للأقسام
+      categorySwiper = new Swiper('.categories-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        freeMode: true,
+        grabCursor: true
+      });
+
+      // أحداث الضغط على أزرار الأقسام
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeCategory = btn.dataset.category;
+          renderCategories();
+        });
+      });
+
+      document.getElementById('searchInput').addEventListener('input', renderCategories);
+      renderCategories();
+    }
+
+    function buildProductCardHTML(product, currency) {
+      const hasPrice = product.price !== null && product.price !== undefined;
+      const priceDisplay = hasPrice
+        ? `${product.price} ${currency}`
+        : (product.priceText || 'تواصل للسعر');
+
+      const safeName = product.name.replace(/'/g, "\\'");
+      const safeUnit = (product.unit || '').replace(/'/g, "\\'");
+
+      return `
+        <div class="product-card">
+          <div>
+            <div class="product-name">${product.name}</div>
+            ${product.unit ? `<span class="product-unit">${product.unit}</span>` : ''}
+          </div>
+          <div class="product-footer">
+            <span class="product-price ${hasPrice ? '' : 'no-price'}">${priceDisplay}</span>
+            <button class="add-btn" onclick="addToCart('${safeName}', '${safeUnit}', ${hasPrice ? product.price : 0})">
+              + أضف
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function toggleCategoryView(catId) {
+      expandedCategories[catId] = !expandedCategories[catId];
+      renderCategories();
+    }
+
+    function renderCategories() {
+      // تدمير السلايدرز القديمة قبل إعادة البناء
+      productSwipers.forEach(s => s.destroy(true, true));
+      productSwipers = [];
+
+      const container = document.getElementById('menuContainer');
+      const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+      const currency = storeData.storeInfo.currency || 'ج.م';
+
+      container.innerHTML = '';
+      let hasResults = false;
+
+      storeData.categories.forEach(cat => {
+        if (activeCategory !== 'all' && activeCategory !== cat.id) return;
+
+        const filteredProducts = cat.products.filter(p =>
+          p.name.toLowerCase().includes(searchTerm) ||
+          (p.unit && p.unit.toLowerCase().includes(searchTerm))
+        );
+
+        if (filteredProducts.length === 0) return;
+        hasResults = true;
+
+        // إذا كان المستخدم يبحث أو ضغط "عرض الكل" نعرض شبكة، وإلا نعرض سلايدر متحرك
+        const isGridMode = searchTerm.length > 0 || expandedCategories[cat.id];
+
+        const section = document.createElement('section');
+        section.className = 'category-section';
+
+        section.innerHTML = `
+          <div class="category-header">
+            <div class="category-title-group">
+              <h2 class="category-title">${cat.icon} ${cat.title}</h2>
+              ${cat.note ? `<span class="category-note">${cat.note}</span>` : ''}
+            </div>
+            ${searchTerm.length === 0 ? `
+              <button class="view-toggle-btn" onclick="toggleCategoryView('${cat.id}')">
+                ${isGridMode ? 'عرض كسلايدر متحرك ◀' : `عرض الكل (${filteredProducts.length})`}
+              </button>
+            ` : ''}
+          </div>
+          ${isGridMode ? `
+            <div class="products-grid">
+              ${filteredProducts.map(p => buildProductCardHTML(p, currency)).join('')}
+            </div>
+          ` : `
+            <div class="swiper products-swiper" id="swiper-${cat.id}">
+              <div class="swiper-wrapper">
+                ${filteredProducts.map(p => `
+                  <div class="swiper-slide">${buildProductCardHTML(p, currency)}</div>
+                `).join('')}
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          `}
+        `;
+
+        container.appendChild(section);
+
+        if (!is
